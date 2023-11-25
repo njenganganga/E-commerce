@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page | Pulsebuy</title>
+    <link rel="stylesheet" href="account.css">
+    <script src="https://kit.fontawesome.com/b7a3052053.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="hero">
+        <h1>Create an account</h1>
+        <div class="signup-box">
+            <div class="left-box">
+                <form >
+                    <input type="text" placeholder="Your Name" required class="input-box">
+                    <input type="text" placeholder="Username" required class="input-box">
+                    <input type="email" placeholder="Your email id " required class="input-box">
+                    <input type="password" placeholder="Create password" required class="input-box">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I accept the terms & conditions</label>
+                    <button type="submit">SIGN UP <span>&#x27f6;</span></button>
+                </form>
+            </div>
+            <div class="right-box">
+                <a href="" class="fb-link"> <i class="fa-brands fa-facebook"></i> Connect with Facebook</a>
+                <a href="" class="tw-link"> <i class="fa-brands fa-twitter"></i> Connect with Twitter</a>
+                <a href="" class="g-link"> <i class="fa-brands fa-google"></i> Connect with Google</a>
+
+            </div>
+
+        </div>
+        <p class="login-msg">I already have an account? <a href="#">Login Now</a></p>
+    </div>
+
+
+    
+<!------ footer ------>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and Ios mobile phone.</p>
+                <div class="app-logo">
+                  <img src="images/googleplay.png">
+                  <img src="images/bose.png">  
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/jaguar (1).jpg">
+                <p>Our Purpose is to sustainably make the pleasure and benefits of online shopping accessible to the mass.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2020 - Njenga </p>
+    </div>
+</div>
+<!-------js for toggle  menu-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else{
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCn7haYl4uTqP6EgeQjEFGvwsdD5HPb0B0",
+          authDomain: "ecommerce-a94f7.firebaseapp.com",
+          projectId: "ecommerce-a94f7",
+          storageBucket: "ecommerce-a94f7.appspot.com",
+          messagingSenderId: "1074639216071",
+          appId: "1:1074639216071:web:5cecd71410db2655c64de2",
+          measurementId: "G-21V1V1KKC3"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+
+    
+</body>
+</html>
